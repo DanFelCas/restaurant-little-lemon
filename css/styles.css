@@ -13,7 +13,6 @@ body {
     background-color: var(--light);
     font-family: 'Markazi Text', serif;
     margin-top: 1rem;
-    margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -53,16 +52,39 @@ nav li a:hover {
 }
 /* Main */
 main { 
-    background-color: var(--light-yellow);
+    background-color: #87C159;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 8px;
+    overflow: hidden;
 }
 h1 {
     font-size: 3rem;
 }
 h2 {
     font-size: 2rem;
+}
+/* First row */
+.main-art {
+    background-image: url("https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg");
+    max-width: 100%;
+    background-position: left 0px top -120px;
+    background-size: cover;
+}
+.main-art h1 {
+    color: var(--light);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    text-align: right;
+    margin: 4rem 2rem 0.2rem 0;
+    
+}
+.main-art p {
+    color: var(--light);
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 1px 1px 2px black;
+    margin: 0 2rem 1rem 2rem;
 }
 /* Second row */
 section {
@@ -76,6 +98,7 @@ section a {
 .row-two article {
     font-size: var(--sm);
     text-align: center;
+    background-color: var(--light-yellow);
     box-shadow: 0px 4px 8px 0px #37474f;
     border-radius: 8px;
     margin: 0.5rem;
@@ -116,13 +139,19 @@ section a {
 .about div {
     background-image: url("https://images.pexels.com/photos/735869/pexels-photo-735869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
+/* Footer */
 footer {
     display: flex;
 }
-
 footer div {
     flex: 1;
 }
 footer div img {
     max-width: 40px;
+}
+footer .copy p {
+    color: var(--green);
+    padding-top: 2rem;
+    border-bottom: 1px solid var(--green);
+    margin-bottom: 0;
 }

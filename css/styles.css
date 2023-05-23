@@ -1,33 +1,68 @@
+/* General */
+:root {
+    --yellow: #f4ce14;
+    --green: #495e57;
+    --light: #edefee;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
 body {
-    background-color: #edefee;
+    background-color: var(--light);
     font-family: 'Markazi Text', serif;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
 }
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
+/* Header */
 header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+}
+/* Nav bar */
+nav {
+    background-color: var(--green);
+    border-radius: 8px;
 }
 nav ul {
+    display: flex;
     list-style: none;
-    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 30px;
 }
-nav li {
-    display: inline-block;
+nav li a {
+    font-size: var(--md);
+    color: var(--light);
+    text-decoration: none;
+    margin: 5px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 8px;
 }
+nav li a:hover {
+    color: var(--yellow);
+    border: 1px solid var(--yellow);    
+}
+/* Main */
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+/* Second row */
 section {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
 }
 article {
     flex: 1;
